@@ -1,18 +1,46 @@
-Linux kernel
-============
+# Linux Kernel
+---
 
-There are several guides for kernel developers and users. These guides can
-be rendered in a number of formats, like HTML and PDF. Please read
-Documentation/admin-guide/README.rst first.
+A fork of the Linux Kernel source tree. This repository mirrors the official Linux Kernel source tree maintained by Linus Torvalds and the Linux community, with additional features or changes I may explore in the future.
 
-In order to build the documentation, use ``make htmldocs`` or
-``make pdfdocs``.  The formatted documentation can also be read online at:
+## Documentation
 
-    https://www.kernel.org/doc/html/latest/
+The Linux Kernel comes with a comprehensive set of guides for developers and users. These guides can be rendered in various formats, such as HTML and PDF. To start, please refer to:
 
-There are various text files in the Documentation/ subdirectory,
-several of them using the reStructuredText markup notation.
+- `Documentation/admin-guide/README.rst`
 
-Please read the Documentation/process/changes.rst file, as it contains the
-requirements for building and running the kernel, and information about
-the problems which may result by upgrading your kernel.
+### Building Documentation
+
+To generate the documentation in different formats, use the following commands:
+
+- HTML format:
+  ```bash
+  make htmldocs
+  ```
+- PDF format:
+  ```bash
+  make pdfdocs
+  ```
+
+Alternatively, you can read the formatted documentation online at:
+[Linux Kernel Documentation](https://www.kernel.org/doc/html/latest/)
+
+### Additional Resources
+
+The `Documentation/` subdirectory contains numerous text files, some of which use the reStructuredText markup notation. These files provide information on various kernel components and processes.
+
+For essential requirements and information on building and running the kernel, please read:
+- `Documentation/process/changes.rst`
+
+This file outlines:
+- Requirements for building and running the kernel.
+- Potential issues that may arise when upgrading the kernel.
+
+## Contribution and Exploration
+
+While this fork is primarily a mirror, I may introduce experimental changes, configurations, or features. If you’re interested in collaborating or reviewing these modifications, feel free to explore the branches of this repository.
+
+For further details, refer to the official Linux Kernel documentation or visit the official [Linux Kernel website](https://www.kernel.org).
+
+Happy coding!
+
