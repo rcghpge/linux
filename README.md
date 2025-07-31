@@ -51,7 +51,7 @@ This file outlines:
 
 This repository exists to support the broader Linux and FOSS/OSS community. While it primarily follows upstream development, you're welcome to explore the branches, experiment, or adapt the codebase for your own work in accordance with the broader Linux community.
 
-For official contribution guidelines, refer to the [Linux Kernel documentation](https://www.kernel.org/doc/html/latest/process/index.html) or visit [kernel.org](https://www.kernel.org/) to get involved in the community's mainline development.
+For official contribution guidelines, please refer to the [Linux Kernel documentation](https://www.kernel.org/doc/html/latest/process/index.html) or visit [kernel.org](https://www.kernel.org/) to get involved in the community's mainline development.
 
 ---
 
