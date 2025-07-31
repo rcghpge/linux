@@ -12,7 +12,7 @@ The Linux kernel is the core of the Linux operating system — managing hardware
 
 The Linux kernel comes with a comprehensive set of guides for developers and users. These guides can be rendered in various formats, such as HTML and PDF. To start, please refer to:
 
-- `Documentation/admin-guide/README.rst`
+- [Documentation/admin-guide/README.rst](./Documentation/admin-guide/README.rst)
 
 ---
 
