@@ -2,35 +2,30 @@ name: Kernel Uptime
 
 on:
   schedule:
-    - cron: '0 0 * * 5'  # Every Friday at 00:00 UTC
-  workflow_dispatch:
+    - cron: '0 0 * * 5'  # Runs every Friday at 00:00 UTC (Adjust as needed)
+  workflow_dispatch: {}
 
 jobs:
   sync:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
 
     steps:
-    - name: Checkout fork
+    - name: Checkout your fork
       uses: actions/checkout@v4
       with:
-        ref: main
-        fetch-depth: 1  
+        fetch-depth: 0 
 
-    - name: Add from mainline upstream and fetch updates
+    - name: Add upstream and fetch
       run: |
         git remote add upstream https://github.com/torvalds/linux.git
-        git fetch upstream master --depth=1
+        git fetch upstream
 
-    - name: Rebase from upstream Linux dev
+    - name: Merge upstream changes
       run: |
         git config user.name "github-actions[bot]"
         git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-        git rebase upstream/master || echo "✅ Nothing to rebase."
+        git merge upstream/master || echo "No upstream changes to merge"
 
-    - name: Push changes to fork (only if updated)
-      env:
-        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: Push changes to fork
       run: |
-        git fetch origin main
-        git diff --quiet HEAD origin/main || git push origin HEAD:main
+        git push origin main
