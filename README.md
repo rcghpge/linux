@@ -12,7 +12,7 @@ The Linux kernel is the core of the Linux operating system — managing hardware
 
 The Linux kernel comes with a comprehensive set of guides for developers and users. These guides can be rendered in various formats, such as HTML and PDF. To start, please refer to:
 
-- [Documentation/admin-guide/README.rst](./Documentation/admin-guide/README.rst)
+- [`Documentation/admin-guide/README.rst`](./Documentation/admin-guide/README.rst)
 
 ---
 
@@ -36,10 +36,10 @@ Alternatively, you can read the formatted documentation online at:
 
 ### Additional Resources
 
-The `Documentation/` subdirectory contains numerous text files, some of which use the reStructuredText markup notation. These files provide information on various kernel components and processes.
+The [`Documentation/`](./Documentation) subdirectory contains numerous text files, some of which use the reStructuredText markup notation. These files provide information on various kernel components and processes.
 
 For essential requirements and information on building and running the kernel, please read:
-- `Documentation/process/changes.rst`
+- [`Documentation/process/changes.rst`](./Documentation/process/changes.rst)
 
 This file outlines:
 - Requirements for building and running the kernel.
