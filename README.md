@@ -2,13 +2,13 @@
 ---
 [![Kernel Uptime](https://github.com/rcghpge/linux/actions/workflows/sync.yml/badge.svg)](https://github.com/rcghpge/linux/actions/workflows/sync.yml)
 
-A fork of the Linux kernel source tree. This repository mirrors the official Linux Kernel source tree maintained by Linus Torvalds and the Linux community, with additional features or changes I may explore in the future.
+A fork of the Linux kernel source tree. This repository mirrors the official Linux kernel source tree maintained by Linus Torvalds and the Linux community, with additional features or changes I may explore in the future.
 
 ---
 
 ## Documentation
 
-The Linux Kernel comes with a comprehensive set of guides for developers and users. These guides can be rendered in various formats, such as HTML and PDF. To start, please refer to:
+The Linux kernel comes with a comprehensive set of guides for developers and users. These guides can be rendered in various formats, such as HTML and PDF. To start, please refer to:
 
 - `Documentation/admin-guide/README.rst`
 
