@@ -1,4 +1,4 @@
-# Linux kernel
+# linux
 ---
 [![Kernel Uptime](https://github.com/rcghpge/linux/actions/workflows/sync.yml/badge.svg)](https://github.com/rcghpge/linux/actions/workflows/sync.yml)
 
