@@ -2,7 +2,7 @@
 ---
 [![Kernel Uptime](https://github.com/rcghpge/linux/actions/workflows/sync.yml/badge.svg)](https://github.com/rcghpge/linux/actions/workflows/sync.yml)
 
-This is a mirror of the Linux kernel source tree maintained by Linus Torvalds and the Linux community, with additional features or changes I may explore in the future.
+This is a mirror of the Linux kernel source tree maintained by Linus Torvalds and the Linux community
 
 ---
 
