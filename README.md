@@ -45,11 +45,11 @@ This file outlines:
 
 ---
 
-## Contribution and Exploration
+## Contributing
 
-While this fork is primarily a mirror, I may introduce experimental changes, configurations, or features. If you’re interested in collaborating or reviewing these modifications, feel free to explore the branches of this repository.
+This repository exists to support the broader Linux and FOSS/OSS community. While it primarily follows upstream development, you're welcome to explore the branches, experiment, or adapt the codebase for your own work in accordance with the broader Linux community.
 
-For further details, refer to the official Linux Kernel documentation or visit the official [Linux Kernel website](https://www.kernel.org).
+For official contribution guidelines, refer to the [Linux Kernel documentation](https://www.kernel.org/doc/html/latest/process/index.html) or visit [kernel.org](https://www.kernel.org/) to get involved in the community's mainline development.
 
 ---
 
