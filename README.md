@@ -4,6 +4,8 @@
 
 This is a mirror of the Linux kernel source tree maintained by Linus Torvalds and the Linux community
 
+The Linux kernel is the core of the Linux operating system — managing hardware, running processes, and enabling secure, efficient computing across everything from phones to servers, supercomputers, and embedded devices.
+
 ---
 
 ## Documentation
