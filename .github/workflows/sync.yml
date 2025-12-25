@@ -26,7 +26,11 @@ jobs:
       run: |
         git config user.name "github-actions[bot]"
         git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-        git merge upstream/master || echo "No upstream changes to merge"
+        git merge upstream/master --no-commit --no-ff || echo "Merge prepared or no changes"
+        
+        # Preserve your README at fork
+        git checkout HEAD -- README*
+        git commit -m "Sync upstream/master (preserve readme at fork)" || echo "No changes to commit"
 
     - name: Push changes to fork
       run: |
