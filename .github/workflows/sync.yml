@@ -1,8 +1,5 @@
 # SPDX-License-Identifier: GPL-2.0-only
 # Copyright (C) 2026 Robert Cocker <rcocker87@gmail.com>
-
-%YAML 1.2
----
 name: Kernel Uptime
 
 on:
