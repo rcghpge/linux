@@ -215,7 +215,6 @@ config S390
 	select HAVE_FUNCTION_GRAPH_TRACER
 	select HAVE_FUNCTION_TRACER
 	select HAVE_GCC_PLUGINS
-	select HAVE_GENERIC_VDSO
 	select HAVE_IOREMAP_PROT if PCI
 	select HAVE_KERNEL_BZIP2
 	select HAVE_KERNEL_GZIP
@@ -273,6 +272,7 @@ config S390
 	select PCI_MSI			if PCI
 	select PCI_MSI_ARCH_FALLBACKS	if PCI_MSI
 	select PCI_QUIRKS		if PCI
+	select HAS_SEPARATE_PREEMPT_RESCHED_BITS
 	select SPARSE_IRQ
 	select SWIOTLB
 	select SYSCTL_EXCEPTION_TRACE
@@ -575,7 +575,7 @@ config HIPERDISPATCH_ON
 	def_bool y
 	bool "Use hiperdispatch on vertical polarization by default"
 	depends on SCHED_TOPOLOGY
-	depends on PROC_SYSCTL
+	depends on SYSCTL
 	help
 	  Hiperdispatch aims to improve the CPU scheduler's decision
 	  making when using vertical polarization by adjusting CPU
@@ -893,7 +893,7 @@ config CMM_IUCV
 config APPLDATA_BASE
 	def_bool n
 	prompt "Linux - VM Monitor Stream, base infrastructure"
-	depends on PROC_SYSCTL
+	depends on SYSCTL
 	help
 	  This provides a kernel interface for creating and updating z/VM APPLDATA
 	  monitor records. The monitor records are updated at certain time
